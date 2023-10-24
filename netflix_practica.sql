@@ -42,7 +42,9 @@ FROM production WHERE runtime BETWEEN 60 AND 105 ORDER by runtime desc;*/
 /*SELECT rating,type, COUNT(*) AS "Cantidad_de_registros" FROM content GROUP BY type,rating ORDER BY rating,type ASC;*/
 
 # H.  Mostrar la cantidad  de películas en los idiomas portugués, francés, alemán, italiano y español, ordenados por cantidad, de mayor a menor.
-
+/* SELECT language, COUNT(id_production) AS "Peliculas_total" FROM production
+where language IN ("English","Italian","French","Dutch","Portuguese") 
+group by language order by COUNT(id_production) desc;*/
 
 # Documentar todo lo anterior en DEEPNOTE:
 # Crea las tablas para los puntos 2 y 3.
